@@ -7,8 +7,7 @@ export default function customAxios(url, callback){
 
             method : 'post',
             //cross domain issue test code
-            baseURL : 'http://ec2-15-165-141-204.ap-northeast-2.compute.amazonaws.com:8080',
-            withCredentials : true,
+            baseURL : 'http://ec2-15-165-141-204.ap-northeast-2.compute.amazonaws.com:8080/',
             
         }
     ).then(function(response){

@@ -21,7 +21,13 @@ function App() {
               <Link to="/about">소개</Link>
             </li>
             <li>
-              <Link to="/users">사용자</Link>
+              <Link to="/summoner">소환사 검색</Link>
+            </li>
+            <li>
+              <Link to="/team">팀계산기</Link>
+            </li>
+            <li>
+              <Link to="/board">게시판</Link>
             </li>
           </ul>
         </nav>
@@ -31,8 +37,14 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/summoner">
+            <SummonerSearch />
+          </Route>
+          <Route path="/team">
+            <TeamSearch />
+          </Route>
+          <Route path="/board">
+            <Board />
           </Route>
           <Route path="/">
             <Home />
@@ -76,13 +88,30 @@ function About() {
   );
 }
 
-function Users() {
+function SummonerSearch() {
   return (
     <div>
       <hr />
-      <h2>사용자 페이지</h2>
+      <h2>소환사 검색</h2>
     </div>
   );
 }
 
+function TeamSearch() {
+  return (
+    <div>
+      <hr />
+      <h2>팀 계산기, 팀 검색</h2>
+    </div>
+  );
+}
+
+function Board() {
+  return (
+    <div>
+      <hr />
+      <h2>게시판 페이지</h2>
+    </div>
+  );
+}
 export default App;

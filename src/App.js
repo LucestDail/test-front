@@ -74,7 +74,7 @@ function Home() {
 
   return (
     <header className="App-header">
-      이 기기의 IP주소는 {ip}입니다.
+      IP주소 : {ip}
     </header>
   );
 }
